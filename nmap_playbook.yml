@@ -5,7 +5,7 @@
 
   tasks:
   - name: ensure NMAP is installed.
-    apt:
+    yum:
       name: nmap
       state: present
-      update_cache: true
+      
