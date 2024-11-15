@@ -1,6 +1,6 @@
 ---
 - name: Playbook to run apt install commands
-  become: true
+  become: false
   hosts: all
 
   tasks:
