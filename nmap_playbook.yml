@@ -1,0 +1,11 @@
+---
+- name: Playbook to run apt install commands
+  become: true
+  hosts: all
+
+  tasks:
+  - name: ensure NMAP is installed.
+    apt:
+      name: nmap
+      state: present
+      update_cache: true
